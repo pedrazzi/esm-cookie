@@ -26,6 +26,7 @@
 	"main": "lib/index.js",
 	"type": "module",
 	"files": [
+		"lib",
 		"assets/**/**/*.js",
 		"README.md"
 	],
@@ -33,5 +34,14 @@
 		"clean": "rimraf lib",
 		"build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
 		"build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.2.2",
+		"@babel/node": "^7.2.2",
+		"@babel/plugin-transform-modules-commonjs": "^7.2.0",
+		"@babel/preset-env": "^7.2.3",
+		"cross-env": "^5.0.1",
+		"rimraf": "^2.6.1"
 	}
 }
