@@ -1,28 +1,38 @@
 {
-  "name": "esm-cookie",
-  "version": "0.0.1",
-  "description": "ES Module version of the cookie package",
-  "author": {
-      "name": "Fabio Pedrazzi",
-      "email": "pedrazzi@hotmail.com",
-      "web": "http://www.agenciaideias.com.br"
-  },
-  "repository": {
-      "type": "git",
-      "url": "git@github.com:pedrazzi/esm-cookie.git"
-  },
-  "keywords": [
-      "cookie",
-      "cookies",
-      "esm",
-      "es module cookies",
-      "javascript",
-      "module"
-  ],
-  "homepage": "https://github.com/pedrazzi/esm-cookie#readme",
-  "bugs": {
-      "url": "https://github.com/pedrazzi/esm-cookie/issues"
-  },
-  "main": "assets/js/utils/index.js",
-  "type": "module"
+    "name": "esm-cookie",
+    "version": "0.0.1",
+    "description": "ES Module version of the cookie package",
+    "author": {
+        "name": "Fabio Pedrazzi",
+        "email": "pedrazzi@hotmail.com",
+        "web": "http://www.agenciaideias.com.br"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:pedrazzi/esm-cookie.git"
+    },
+    "keywords": [
+        "cookie",
+        "cookies",
+        "esm",
+        "es module cookies",
+        "javascript",
+        "module"
+    ],
+    "homepage": "https://github.com/pedrazzi/esm-cookie#readme",
+    "bugs": {
+        "url": "https://github.com/pedrazzi/esm-cookie/issues"
+    },
+    "main": "lib/index.js",
+    "type": "module",
+    "files": [
+        "assets/**/**/*.js",
+        "SERVER_SIDE.md",
+        "README.md"
+    ],
+    "scripts": {
+        "clean": "rimraf lib",
+        "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+        "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min"
+    }
 }
