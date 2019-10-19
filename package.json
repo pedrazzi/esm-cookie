@@ -1,30 +1,28 @@
 {
-  "author": {
-    "name": "Fabio Pedrazzi",
-    "email": "pedrazzi@hotmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/pedrazzi/esm-cookie/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "HTTP server cookie parsing and serialization",
-  "homepage": "https://github.com/pedrazzi/esm-cookie#readme",
-  "keywords": [
-    "cookie",
-    "cookies",
-    "ems",
-    "es module cookies",
-    "javascript"
-    "module"
-  ],
-  "license": "MIT",
-  "module": "assets/js/utils/cookie.node.js",
   "name": "esm-cookie",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pedrazzi/esm-cookie.git"
+  "version": "0.0.1",
+  "description": "ES Module version of the cookie package",
+  "author": {
+      "name": "Fabio Pedrazzi",
+      "email": "pedrazzi@hotmail.com",
+      "web": "http://www.agenciaideias.com.br"
   },
-  "type": "module",
-  "version": "0.0.1"
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:pedrazzi/esm-cookie.git"
+  },
+  "keywords": [
+      "cookie",
+      "cookies",
+      "esm",
+      "es module cookies",
+      "javascript",
+      "module"
+  ],
+  "homepage": "https://github.com/pedrazzi/esm-cookie#readme",
+  "bugs": {
+      "url": "https://github.com/pedrazzi/esm-cookie/issues"
+  },
+  "main": "assets/js/utils/cookie.node.js",
+  "type": "module"
 }
