@@ -19,7 +19,7 @@
     "module"
   ],
   "license": "MIT",
-  "module": "assets/js/utils/cookie.js",
+  "module": "assets/js/utils/cookie.node.js",
   "name": "esm-cookie",
   "repository": {
     "type": "git",
