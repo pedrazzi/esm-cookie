@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 4 versions", "ie >= 8", ">= 1%"]
+      },
+      "loose": true,
+      "modules": false
+    }]
+  ],
+  "env": {
+    "commonjs": {
+      "plugins": [
+        ["@babel/plugin-transform-modules-commonjs", { "loose": true }]
+      ]
+    }
+  }
+}
