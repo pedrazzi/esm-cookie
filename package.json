@@ -14,14 +14,17 @@
     "cookie",
     "cookies",
     "ems",
+    "es module cookies",
     "javascript"
     "module"
   ],
   "license": "MIT",
+  "module": "assets/js/utils/cookie.js",
   "name": "esm-cookie",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pedrazzi/esm-cookie.git"
   },
+  "type": "module",
   "version": "0.0.1"
 }
