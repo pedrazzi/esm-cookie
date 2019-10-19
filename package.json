@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Fábio Pedrazzi",
+    "email": "pedrazzi@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pedrazzi/esm-cookie/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "HTTP server cookie parsing and serialization",
+  "homepage": "https://github.com/pedrazzi/esm-cookie#readme",
+  "keywords": [
+    "cookie",
+    "cookies",
+    "ems",
+    "javascript"
+    "module"
+  ],
+  "license": "MIT",
+  "name": "esm-cookie",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrazzi/esm-cookie.git"
+  },
+  "version": "0.0.1"
+}
