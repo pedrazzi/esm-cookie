@@ -9,6 +9,7 @@
  */
  
 class cookie {
+ 
     constructor() {
         this.version = '0.0.2'
         this.name = 'esm-cookie'
@@ -27,15 +28,29 @@ class cookie {
     }
 
     set(name, value, attr = { expires: Infinity, path: "/" } ) {
-        let d = new Date(), expires
-        d.setTime(d.getTime() + (attr.expires * 24 * 60 * 60 * 1000))
-        expires = d.toUTCString();
-        document.cookie = `${name}=${value};expires=${expires};path=${attr.path}`
+        let days = new Date(), expires
+        days.setTime(days.getTime() + (attr.expires * 24 * 60 * 60 * 1000))
+        expires = days.toUTCString();
+        document.cookie = `${name}=${value};expires=${attr.expires};path=${attr.path}`
     }
 
     remove(name, attr = { path: "/" }) {
-        this.set(name, "", 0, attr.path);
+        this.set(name, "", 0, attr.path)
     }
+ 
+    check(name) {
+        return (this.get(name) != "") ? true : false
+    }
+ 
+    getAll() {
+        let cookies = document.cookie(";"),
+            text = ""
+        for(let i = 1; i <= cookies.length; i++){
+            text += i + ": " + cookies[i-1] + "\n";
+        }
+        return text
+    }
+ 
 }
 
 export default new cookie()
