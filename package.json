@@ -1,5 +1,5 @@
 {
-	"name": "esm-cookie",
+	"name": "@pedrazzi/esm-cookie-npm",
 	"version": "0.1.0",
 	"description": "ES Module version of the cookie package",
 	"author": {
