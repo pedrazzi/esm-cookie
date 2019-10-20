@@ -1,5 +1,7 @@
 # JavaScript Module Cookie
 
+ES Module version of the cookie package
+
 ## Example for how to load the ES module in a browser:
 
 ```html
