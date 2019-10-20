@@ -44,7 +44,7 @@ cookie.get('nothing') // => undefined
 Read all visible cookies:
 
 ```javascript
-Cookies.getAll() // => { name: 'value' }
+cookie.getAll() // => { name: 'value', nothing: 'undefined' }
 ```
 
 Check if cookie exist
