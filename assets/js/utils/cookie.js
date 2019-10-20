@@ -1,4 +1,6 @@
 /**
+ *
+ * Esm-cookie
  * JavaScript Module Cookie 
  * https://github.com/pedrazzi/esm-cookie
  * 
