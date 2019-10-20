@@ -1,6 +1,6 @@
 {
 	"name": "esm-cookie",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "ES Module version of the cookie package",
 	"author": {
 		"name": "Fabio Pedrazzi",
@@ -24,24 +24,5 @@
 		"url": "https://github.com/pedrazzi/esm-cookie/issues"
 	},
 	"main": "lib/index.js",
-	"type": "module",
-	"files": [
-		"lib",
-		"assets/**/**/*.js",
-		"README.md"
-	],
-	"scripts": {
-		"clean": "rimraf lib",
-		"build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-		"build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min"
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.2.3",
-		"@babel/core": "^7.2.2",
-		"@babel/node": "^7.2.2",
-		"@babel/plugin-transform-modules-commonjs": "^7.2.0",
-		"@babel/preset-env": "^7.2.3",
-		"cross-env": "^5.0.1",
-		"rimraf": "^2.6.1"
-	}
+	"type": "module"
 }

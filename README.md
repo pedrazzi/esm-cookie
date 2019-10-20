@@ -5,12 +5,12 @@ ES Module version of the cookie package
 ## Example for how to load the ES module in a browser:
 
 ```html
-<script type="module" src="/assets/js/utils/cookie.js"></script>
+<script type="module" src="cookie.js"></script>
 ```
 <b>OR<b>
 ```html
 <script type="module">
-  import cookie from '/assets/js/utils/cookie.js'
+  import cookie from 'cookie.js'
 </script>
 ```
 
@@ -31,7 +31,7 @@ cookie.set('name', 'value', { expires: 7 })
 Create an expiring cookie, valid to the path of the current page:
 
 ```javascript
-cookie.set('name', 'value', { expires: 7, path: '' })
+cookie.set('test', 'value_test', { expires: 7, path: '' })
 ```
 
 Read cookie:
@@ -41,6 +41,13 @@ cookie.get('name') // => 'value'
 cookie.get('nothing') // => undefined
 ```
 
+Read all visible cookies:
 
+```javascript
+cookie.getAll() // => { name: 'value', test: 'value_test' }
+```
 
-
+Check if cookie exist
+```javascript
+cookie.check("name")  // => true
+```
