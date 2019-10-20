@@ -43,12 +43,15 @@ class cookie {
     }
  
     getAll() {
-        let cookies = document.cookie(";"),
-            text = ""
-        for(let i = 1; i <= cookies.length; i++){
-            text += i + ": " + cookies[i-1] + "\n";
+        const ca = decodeURIComponent(document.cookie).split(';'),
+             arr =  []
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i]
+            while (c.charAt(0) == ' ') { c = c.substring(1); }
+            let item = c.substring(name.length, c.length).split('=')
+            arr.push({ [item[0]]: item[1] })
         }
-        return text
+        return arr    
     }
  
 }
