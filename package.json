@@ -27,12 +27,10 @@
 	"type": "module",
 	"files": [
 		"lib",
-		"assets/**/**/*.js",
+		"esm-cookie.js",
 		"README.md"
 	],
 	"scripts": {
-		"clean": "rimraf lib",
-		"build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
 		"build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min"
 	},
 	"devDependencies": {
