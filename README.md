@@ -41,6 +41,13 @@ cookie.get('name') // => 'value'
 cookie.get('nothing') // => undefined
 ```
 
+Read all visible cookies:
 
+```javascript
+Cookies.getAll() // => { name: 'value' }
+```
 
-
+Check if cookie exist
+```javascript
+cookie.check("name")  // => true or false
+```
