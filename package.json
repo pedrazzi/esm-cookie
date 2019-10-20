@@ -1,6 +1,6 @@
 {
 	"name": "esm-cookie",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "ES Module version of the cookie package",
 	"author": {
 		"name": "Fabio Pedrazzi",

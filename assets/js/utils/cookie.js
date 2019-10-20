@@ -4,14 +4,14 @@
  * JavaScript Module Cookie 
  * https://github.com/pedrazzi/esm-cookie
  * 
- * @version 0.0.1
+ * @version 0.0.2
  *
  */
  
 class cookie {
     constructor() {
-        this.version = '0.0.1'
-        this.name = 'js-es6-cookie'
+        this.version = '0.0.2'
+        this.name = 'esm-cookie'
     }
 
     get(name) {
