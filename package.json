@@ -23,6 +23,5 @@
 	"bugs": {
 		"url": "https://github.com/pedrazzi/esm-cookie/issues"
 	},
-	"main": "lib/index.js",
-	"type": "module"	
+	"main": "cookie.js"	
 }
